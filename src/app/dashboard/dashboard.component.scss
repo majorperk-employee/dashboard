@@ -1,0 +1,9 @@
+.stat-card {
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+
+  .stat-card:hover {
+    box-shadow: 13px lightblue;
+  }
+}

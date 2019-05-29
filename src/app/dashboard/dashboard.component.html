@@ -4,15 +4,13 @@
 </nz-breadcrumb>
 
 
-<!-- <div> -->
-  <div nz-row [nzGutter]="8" style="margin-bottom: 10px;">
-    <div nz-col [nzSpan]="24 / count" *ngFor="let item of data">
-      <nz-card style="background: white; text-align: center; width: 100%;">
-        <span style="font-size: 14px;">{{item.abbreviation}}</span>
-        <p style="font-size: 24px; margin: 0">{{item.value}} {{item.suffix}}</p>
-      </nz-card>
-    </div>
+<div nz-row [nzGutter]="8" style="margin-bottom: 10px;">
+  <div nz-col [nzSpan]="24 / count" *ngFor="let item of data">
+    <nz-card class="stat-card" [style.background]="item.color" nzHoverable>
+      <span style="font-size: 14px;">{{item.abbreviation}}</span>
+      <p style="font-size: 24px; margin: 0">{{item.value}} {{item.suffix}}</p>
+    </nz-card>
   </div>
-<!-- </div> -->
+</div>
 
 <div style="padding:24px; background: #fff; min-height: 360px;"></div>
