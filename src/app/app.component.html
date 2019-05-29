@@ -3,14 +3,31 @@
         <div class="logo-container" [style.width.px]="width">
             <span class="logo">
                 <img src="./assets/logo/mini-logo.png">
-                <span class="logo-name" *ngIf="!isCollapsed" >Major Perk</span>
+                <span class="logo-name" *ngIf="!isCollapsed">Major Perk</span>
             </span>
         </div>
 
         <div class="user-menu">
-            <i nz-icon type="user"></i>
-            Troy Crema
+            <nz-dropdown [nzTrigger]="'click'" [nzPlacement]="'bottomRight'">
+                <span nz-dropdown>
+                    <i nz-icon type="user"></i>
+                    Troy Crema
+                    <i nz-icon type="down"></i>
+                </span>
+                <ul nz-menu nzSelectable style="margin-top: 15px;">
+                    <li (click)="routeTo('profile')" nz-menu-item>
+                        <i nz-icon nzType="setting"></i>Profile
+                    </li>
+                    <li (click)="routeTo('manager')" nz-menu-item>
+                        <i nz-icon nzType="audit"></i>Employee Rewards
+                    </li>
+                    <li (click)="routeTo('login')" nz-menu-item>
+                        <i nz-icon nzType="logout"></i>Sign Out
+                    </li>
+                </ul>
+            </nz-dropdown>
         </div>
+
     </nz-header>
 
     <nz-layout>
@@ -42,7 +59,6 @@
             <router-outlet></router-outlet>
         </nz-content>
 
-        <nz-footer style="text-align: center;"> Reetayn ©2019 All Rights
-            Reserved </nz-footer>
+        <nz-footer style="text-align: center;"> Reetayn ©2019 All Rights Reserved </nz-footer>
     </nz-layout>
 </nz-layout>

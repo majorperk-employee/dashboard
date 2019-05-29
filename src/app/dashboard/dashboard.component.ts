@@ -31,7 +31,7 @@ export class DashboardComponent {
     },
     {
       title: 'Number of Employees Left ?',
-      abbreviation: '# of Empl Left ?',
+      abbreviation: '# of Empl Left',
       value: 50,
       suffix: "",
       color: '#ef4822'
