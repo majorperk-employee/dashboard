@@ -14,31 +14,42 @@ nz-sider {
   color: #002140;
   z-index: 1000;
 
-  box-shadow: 
-  0 5px 10px -12px rgba(0, 0, 0, 0.42), 
-  0 3px 10px 0px rgba(0, 0, 0, 0.12), 
-  0 4px 5px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px -12px rgba(0, 0, 0, 0.42), 0 3px 10px 0px rgba(0, 0, 0, 0.12),
+    0 4px 5px -5px rgba(0, 0, 0, 0.2);
 }
 
 .content {
   padding: 0 50px;
   margin-top: 64px;
   min-height: 900px;
-  margin-left: 200px;
 }
 
-.logo {
-  width: 200px;
+.logo-container {
+  float: left;
+  background-color: #4b98e0;
   height: 100%;
-  padding: 16px;
 
-  img {
-    height: 35px;
-  }
+  .logo {
+    padding: 16px;
+    margin: auto;
 
-  .logo-name {
-    color: white;
-    font-size: 18px;
-    margin: 0 0 0 10px;
+    img {
+      margin: auto;
+      height: 35px;
+    }
+
+    .logo-name {
+      color: white;
+      font-size: 18px;
+      margin: 0 0 0 10px;
+    }
   }
+}
+
+.user-menu {
+  height: 100%;
+  background-color: #4b98e0;
+  color: white;
+  float: right;
+  padding: 0 20px 0 20px;
 }

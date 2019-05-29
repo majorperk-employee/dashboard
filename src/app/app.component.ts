@@ -8,8 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'reetayn-dashboard';
 
-  isCollapsed = false;
+  isCollapsed = true;
   isReverseArrow = false;
-  width = 200;
+  
+  get width(): number {
+    return this.isCollapsed ? 80 : 200; 
+  }
   
 }
