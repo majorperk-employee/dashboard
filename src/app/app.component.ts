@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'reetayn-dashboard';
+
+  isCollapsed = false;
+  isReverseArrow = false;
+  width = 200;
+  
 }

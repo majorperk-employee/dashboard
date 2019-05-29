@@ -1,0 +1,39 @@
+nz-sider {
+  margin-top: 64px;
+  overflow: auto;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+}
+
+.global-header {
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  background-color: #59acfa;
+  color: #002140;
+  z-index: 1000;
+}
+
+.content {
+  padding: 0 50px;
+  margin-top: 64px;
+  min-height: 900px;
+  margin-left: 200px;
+}
+
+.logo {
+  width: 200px;
+  height: 100%;
+  padding: 16px;
+
+  img {
+    height: 35px;
+  }
+
+  .logo-name {
+    color: white;
+    font-size: 18px;
+    margin: 0 0 0 10px;
+  }
+}
