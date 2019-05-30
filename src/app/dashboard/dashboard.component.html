@@ -15,7 +15,19 @@
 <div nz-row [nzGutter]="8" style="margin-bottom: 10px;">
   <div nz-col [nzSpan]="12">
     <div style="background-color: white; height: 300px; padding: 5px">
-      <h1>Put some graphs here, please</h1>
+      <h1>
+        <div style="width: 40%;">
+          <canvas
+              baseChart
+              [chartType]="'line'"
+              [datasets]="chartData"
+              [labels]="chartLabels"
+              [options]="chartOptions"
+              [legend]="true"
+              (chartClick)="onChartClick($event)">
+          </canvas>
+        </div>
+      </h1>
     </div>
   </div>
   <div nz-col [nzSpan]="12">
